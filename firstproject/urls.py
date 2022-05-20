@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from myapp.views import hello2
 from myapp.views import sayhello
+from myapp.views import hello4
 
 urlpatterns = [
     path('admin/', admin.site.urls),   #path(網址,函式),
     path('hello2/<str:username>', hello2),
     path('', sayhello),
+    path('hello4/<str:username>', hello4),
 
     
 ]
